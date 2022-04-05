@@ -64,3 +64,98 @@ ul {
 
 /* Start Component */
 /* End Component */
+
+/* Start Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+}
+
+header .logo img {
+    width: 245px;
+}
+
+@media (max-width: 991px) {
+    header .logo img {
+        width: 185px;
+    }
+}
+
+@media (max-width: 768px) {
+    header .logo img {
+        margin-bottom: 10px;
+    }
+}
+
+header .cont {
+    display: flex;
+    align-items: center;
+}
+
+header .cont .images {
+    display: none;
+    align-items: center;
+}
+
+@media (min-width: 1199px) {
+    header .cont .images {
+        display: flex;
+    }
+}
+
+header .cont .images .icon {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+header .cont .images .icon img {
+    margin-right: 10px;
+}
+
+header .cont .images img[alt="search"] {
+    cursor: pointer;
+}
+
+header .cont .links {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .cont .links a {
+    display: block;
+    margin-right: 20px;
+}
+
+header .cont .links a:first-of-type {
+    background-color: var(--pra-color, #000000);
+    color: white;
+    padding: 15px 35px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+header .cont .links a:last-of-type {
+    color: var(--main-color, #00aeef);
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* End Header */
