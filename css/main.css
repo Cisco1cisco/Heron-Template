@@ -349,3 +349,135 @@ header .cont .links a:last-of-type {
 }
 
 /* End About Us */
+
+/* Start Services */
+
+.services {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--trans-color, #5ab5dd);
+}
+
+.services .container .head {
+    margin-bottom: 75px;
+}
+
+.services .container .head h2 {
+    font-size: 45px;
+    color: var(--pra-color, #000000);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .services .container .head h2 {
+        font-size: 35px;
+    }
+}
+
+.services .container .head h2 span {
+    color: white;
+}
+
+.services .container .head p {
+    font-size: 20px;
+    color: var(--pra-color, #000000);
+}
+
+.services .container .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .services .container .content {
+        flex-direction: column;
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .services .container .content {
+        width: 100%;
+    }
+}
+
+.services .container .content .service {
+    flex-basis: calc((100% / 3) - 30px);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 768px) {
+    .services .container .content .service {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .services .container .content .service {
+        padding: 25px 5px;
+    }
+}
+
+.services .container .content .service img {
+    width: 240px;
+    margin: -45px 0 25px;
+}
+
+@media (max-width: 991px) {
+    .services .container .content .service img {
+        width: 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    .services .container .content .service img {
+        width: 330px;
+    }
+}
+
+.services .container .content .service h3 {
+    font-size: 30px;
+    color: var(--pra-color, #000000);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.services .container .content .service p {
+    color: var(--trans-color, #5ab5dd);
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.services .container nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto 0;
+}
+
+.services .container nav div {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: white;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.services .container nav div.active {
+    background: black;
+}
+
+/* End Services */
