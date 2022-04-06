@@ -66,7 +66,6 @@ ul {
 /* Start Component */
 
 a.button {
-    display: block;
     text-transform: capitalize;
     width: fit-content;
     padding: 20px 40px;
@@ -75,6 +74,21 @@ a.button {
     -moz-transition: var(--trans-dur, 0.3s);
     -ms-transition: var(--trans-dur, 0.3s);
     -o-transition: var(--trans-dur, 0.3s);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2.title {
+    font-size: 45px;
+    color: var(--pra-color, #000000);
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h2.title span {
+    color: var(--main-color, #00aeef);
 }
 
 /* End Component */
@@ -481,3 +495,158 @@ header .cont .links a:last-of-type {
 }
 
 /* End Services */
+
+/* Start Pricing and times */
+
+.pricing-times {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url(../photos/pricing_bg.jpg);
+    background-size: cover;
+}
+
+.pricing-times .pricing .price-content {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 991px) {
+    .pricing-times .pricing .price-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.pricing-times .pricing .price-content img {
+    width: 530px;
+}
+
+@media (max-width: 991px) {
+    .pricing-times .pricing .price-content img {
+        width: 90%;
+    }
+}
+
+.pricing-times .pricing .price-content .text {
+    background-color: white;
+    width: 50%;
+    padding: 20px;
+}
+
+@media (max-width: 991px) {
+    .pricing-times .pricing .price-content .text {
+        width: 90%;
+    }
+}
+
+.pricing-times .pricing .price-content .text .text-cont {
+    border: 1px dotted var(--main-color, #00aeef);
+    width: 100%;
+    height: 100%;
+    padding: 50px 5px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 991px) {
+    .pricing-times .pricing .price-content .text .text-cont {
+        padding: 100px 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .pricing-times .pricing .price-content .text .text-cont {
+        padding: 50px 5px;
+    }
+}
+
+.pricing-times .pricing .price-content .text .text-cont ul {
+    flex-basis: calc((100% / 2) - 3px);
+}
+
+@media (max-width: 576px) {
+    .pricing-times .pricing .price-content .text .text-cont ul {
+        flex-basis: 100%;
+    }
+}
+
+.pricing-times .pricing .price-content .text .text-cont ul li {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    border-bottom: 2px dotted var(--main-color, #00aeef);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pricing-times .pricing .price-content .text .text-cont ul li span {
+    z-index: 1;
+    background-color: white;
+    padding: 10px 5px;
+    margin-bottom: -19px;
+}
+
+.pricing-times .pricing .price-content .text .text-cont a {
+    border: 1px solid var(--main-color, #00aeef);
+    color: var(--main-color, #00aeef);
+    padding: 5px 40px;
+    margin: 0 10px 0 auto;
+}
+
+@media (max-width: 991px) {
+    .pricing-times .pricing .price-content .text .text-cont a {
+        margin: 0 20px 0 auto;
+        padding: 20px 40px;
+    }
+}
+
+.pricing-times .pricing .price-content .text .text-cont a:hover {
+    background-color: var(--main-color, #00aeef);
+    color: white;
+}
+
+.pricing-times .times {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.pricing-times .times .times-content {
+    background-color: var(--trans-color, #5ab5dd);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+}
+
+@media (max-width: 991px) {
+    .pricing-times .times .times-content {
+        padding: 60px 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-times .times .times-content {
+        flex-direction: column;
+    }
+}
+
+.pricing-times .times .times-content ul {
+    color: white;
+    flex-basis: calc((100% / 2) - 30px);
+}
+
+.pricing-times .times .times-content ul li {
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing-times .times .times-content ul li span {
+    word-spacing: 10px;
+    display: block;
+}
+
+/* End Pricing and times */
