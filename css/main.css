@@ -650,3 +650,88 @@ header .cont .links a:last-of-type {
 }
 
 /* End Pricing and times */
+
+/* Start Team */
+
+.team {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.team .container .team-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team .container .team-content .member {
+    flex-basis: calc((100% / 3) - 30px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 991px) {
+    .team .container .team-content .member {
+        flex-basis: calc((100% / 2) - 30px);
+    }
+}
+
+@media (max-width: 768px) {
+    .team .container .team-content .member {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .team .container .team-content .member:last-of-type {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .team .container .team-content .member:nth-of-type(2) {
+        display: none;
+    }
+}
+
+.team .container .team-content .member img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.team .container .team-content .member h3 {
+    font-size: 50px;
+    font-weight: 500;
+    color: #23242a;
+    margin-bottom: 10px;
+}
+
+.team .container .team-content .member h4 {
+    font-size: 20px;
+    color: var(--main-color, #00aeef);
+    font-weight: 500;
+}
+
+.team div.angle {
+    position: absolute;
+    background-color: var(--main-color, #00aeef);
+    padding: 15px;
+    cursor: pointer;
+    bottom: 30px;
+}
+
+.team div.angle.right {
+    right: 60px;
+}
+
+.team div.angle.left {
+    left: 60px;
+}
+
+.team div.angle i {
+    color: white;
+    font-size: 20px;
+}
+
+/* End Team */
